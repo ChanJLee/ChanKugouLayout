@@ -4,6 +4,9 @@
  ![image](https://github.com/ChanJLee/ChanKugouLayout/raw/master/src/demo.gif)
 
 # How To Use
+
+layout:
+
 ```xml
    <com.chan.slidingofflayout.KuGouLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -16,10 +19,13 @@
         android:id="@+id/m_testButton"
         android:text="测试"/>
 
-</com.chan.slidingofflayout.KuGouLayout>
+   </com.chan.slidingofflayout.KuGouLayout>
 ```
+
+activity:
+
 ```java
- KuGouLayout layout = (KuGouLayout) button.getParent();
+ 	KuGouLayout layout = (KuGouLayout) button.getParent();
         layout.setOnCloseListener(new KuGouLayout.OnCloseListener() {
             @Override
             public void onCloseListener() {
